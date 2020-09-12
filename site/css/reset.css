@@ -68,6 +68,11 @@ img, fieldset {
   border: none;
 }
 
+/* 버튼 초기화 */
+button {
+  border: 0;
+}
+
 /* IR 효과 */
 /* 참고: http://darum.daum.net/convention/css/css_ir */
 /* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */

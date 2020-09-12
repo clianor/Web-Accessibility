@@ -28,8 +28,6 @@
   height: 325px;
   background: url(../img/header_bg.jpg) center top repeat-x;
 }
-#contents {
-}
 #footer {
   border-top: 1px solid #eee;
 }
@@ -46,7 +44,7 @@
   background-color: #dceff7;
 }
 #cont_cont {
-  background-color: #dceff7;
+  background-color: #f6fdff;
 }
 
 /* 컨테이너 */
@@ -180,54 +178,69 @@
   background-position: 0 -660px;
 }
 
-/* 배너 */
+/* 슬릭 배너 */
 .ban {
   position: relative;
-  padding: 24px 0 20px;
+  padding: 24px 0 40px;
 }
-.ban a.prev {
+.ban .slick-prev {
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: -80px;
   width: 43px;
   height: 43px;
   background: url(../img/icon.png) no-repeat -150px 0;
+  text-indent: -9999px;
 }
-.ban a.next {
+.ban .slick-next {
   position: absolute;
-  top: 60px;
+  top: 80px;
   right: -80px;
   width: 43px;
   height: 43px;
   background: url(../img/icon.png) no-repeat -150px -43px;
+  text-indent: -9999px;
 }
-.ban a.prev:hover {
+.ban .slick-prev:hover {
   background-position: -193px 0;
 }
-.ban a.next:hover {
+.ban .slick-next:hover {
   background-position: -193px -43px;
 }
-.ban ul {
-  overflow: hidden;
-}
-.ban ul li {
-  float: left;
-  width: 330px;
-}
-.ban ul li.ban_img1 {
-  text-align: left;
-}
-.ban ul li.ban_img2 {
-  text-align: center;
-}
-.ban ul li.ban_img3 {
-  text-align: right;
-}
-.ban ul li img {
+.ban img {
   border: 4px solid #dcdcdc;
 }
-.ban ul li img:hover {
+.ban img:hover {
   border-color: #98bcdc;
+}
+.ban .slick-slide {
+  margin: 10px;
+}
+.ban .slick-dots {
+  position: absolute;
+  bottom: 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.ban .slick-dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+.ban .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: #5dbfeb;
+  border-radius: 50%;
+}
+.ban .slick-dots li.slick-active button {
+  background: #2b91c8;
 }
 
 /* 컨텐츠 */
@@ -329,8 +342,6 @@
   color: #0093bd;
   padding-bottom: 3px;
   font-weight: bold;
-}
-.notice ul {
 }
 .notice ul li {
   overflow: hidden;
