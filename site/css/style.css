@@ -43,9 +43,7 @@
   background-color: #eaf7fd;
 }
 #cont_ban {
-  width: 100%;
-  height: 200px;
-  background: #555;
+  background-color: #dceff7;
 }
 #cont_cont {
   width: 100%;
@@ -180,4 +178,54 @@
   width: 60px;
   height: 60px;
   background: url(../img/icon.png) no-repeat 0 -600px;
+}
+
+/* 배너 */
+.ban {
+  position: relative;
+  padding: 24px 0 20px;
+}
+.ban a.prev {
+  position: absolute;
+  top: 60px;
+  left: -80px;
+  width: 43px;
+  height: 43px;
+  background: url(../img/icon.png) no-repeat -150px 0;
+}
+.ban a.next {
+  position: absolute;
+  top: 60px;
+  right: -80px;
+  width: 43px;
+  height: 43px;
+  background: url(../img/icon.png) no-repeat -150px -43px;
+}
+.ban a.prev:hover {
+  background-position: -193px 0;
+}
+.ban a.next:hover {
+  background-position: -193px -43px;
+}
+.ban ul {
+  overflow: hidden;
+}
+.ban ul li {
+  float: left;
+  width: 330px;
+}
+.ban ul li.ban_img1 {
+  text-align: left;
+}
+.ban ul li.ban_img2 {
+  text-align: center;
+}
+.ban ul li.ban_img3 {
+  text-align: right;
+}
+.ban ul li img {
+  border: 4px solid #dcdcdc;
+}
+.ban ul li img:hover {
+  border-color: #98bcdc;
 }
