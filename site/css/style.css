@@ -435,7 +435,6 @@
 }
 
 /* 마우스 오버효과1 */
-.notice_hover {}
 .notice_hover h4 {
   font-size: 14px;
   color: #0093bd;
@@ -478,6 +477,52 @@
   color: #fff;
 }
 .notice_hover ul li a strong {
+  padding-top: 3px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+/* 마우스 오버효과2 */
+.notice_hover2 h4 {
+  font-size: 14px;
+  color: #0093bd;
+  padding-bottom: 3px;
+  font-weight: bold;
+}
+.notice_hover2 ul {
+  overflow: hidden;
+}
+.notice_hover2 ul li {
+  float: left;
+  width: 93px;
+  margin-right: 5px;
+  text-align: center;
+}
+.notice_hover2 ul li:last-child {
+  margin-right: 0;
+}
+.notice_hover2 ul li a span {
+  display: block;
+  position: relative;
+  width: 93px;
+  height: 93px;
+}
+.notice_hover2 ul li a span:hover em {
+  visibility: visible;
+}
+.notice_hover2 ul li a span img {
+  width: 100%;
+}
+.notice_hover2 ul li a span em {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.notice_hover2 ul li a strong {
   padding-top: 3px;
   display: inline-block;
   font-size: 12px;
