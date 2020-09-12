@@ -570,7 +570,6 @@
   border: 0;
 }
 .tab_menu ul li ul li {
-  display: none;
   float: none;
   border: 0;
   background: url(../img/dot.gif) no-repeat 9px 8px;
@@ -588,9 +587,6 @@
 }
 .tab_menu ul li.active a {
   color: #fff;
-}
-.tab_menu ul li.active ul li {
-  display: block;
 }
 .tab_menu ul li.active ul li a {
   color: #333;
