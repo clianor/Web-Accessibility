@@ -263,7 +263,7 @@
               <div class="popup mt15">
                 <h4>Advertisement</h4>
                 <ul>
-                  <li><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
+                  <li class="layer"><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
                   <li><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
                   <li><a href="#"><img src="img/sban09.jpg" alt="이미지3"></a></li>
                 </ul>
@@ -454,10 +454,27 @@
   </div>
   <!-- //wrap -->
 
+  <!-- 레이어 팝업 -->
+  <div id="layer">
+    <img src="img/webstandard1.jpg" alt="웹표준 사이트">
+    <a href="#" class="close">Close</a>
+  </div>
+  <!-- //레이어 팝업 -->
+
   <!-- script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script>
+    // 레이어 팝업
+    $(".layer").click(function(e) {
+      e.preventDefault();
+      $("#layer").show();
+    });
+    $("#layer .close").click(function(e) {
+      e.preventDefault();
+      $("#layer").hide();
+    });
+
     // 탭 메뉴
     var $tab_list = $(".tab_menu");
     $tab_list.find("ul ul").hide();
